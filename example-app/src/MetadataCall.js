@@ -23,13 +23,29 @@ function MetadataCall() {
 
   
     return (
-      <div className="App">
-          {someData.map(datum =><h1 style={{color:"red"}}>Key :{datum.metadatum}</h1>)}
+      <div>
+        <div class="row" style={{width:"100%"}}>
+          {someData.map(datum =>
+            <div class="card col-3 mr-1">
+            <div class="card-body">
+            <h1 style={{color:"red"}}>Key :{datum.metadatum}</h1>
+              
+            </div>
+            </div>
+          ) 
+
+          
+          
+          
+          }
 
 
           
  
       </div>
+      </div>
+
+      
     );
   }
   
